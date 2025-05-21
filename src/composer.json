@@ -1,0 +1,23 @@
+{
+    "name": "aacarpena/torneos",
+    "description": "App para torneos",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Aaron Carpena",
+            "email": "aaroncarpena.alu@iespacomolla.es"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "ramsey/uuid": "^4.7",
+        "phroute/phroute": "^2.2",
+      "ext-pdo": "*",
+        "guzzlehttp/guzzle": "^7.9",
+      "ext-http": "*"
+    },
+    "autoload": {
+        "psr-4": {"App\\": "app/"}
+    }
+}
