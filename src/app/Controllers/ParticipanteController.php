@@ -68,6 +68,7 @@ Class ParticipanteController implements InterfaceController
 
         if(password_verify($_POST['password'],$participante['password'])){
             $_SESSION['usuario'] = $participante['email'];
+            $_SESSION['uuid'] = $participante['uuid'];
 
         }
 

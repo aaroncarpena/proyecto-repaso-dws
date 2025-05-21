@@ -6,7 +6,7 @@
 </head>
 <body>
 <h3>EDITAR PARTICIPANTE</h3>
-<form action="/participante/modificar-participante" method="post">
+<form action="/modificar-participante" method="post">
     <input type="hidden" name="uuid" value="<?= $participante->getUuid() ?>">
 
     <label for="email">Correo Electrónico:</label>

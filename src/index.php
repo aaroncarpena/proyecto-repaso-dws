@@ -31,6 +31,8 @@ $router->get('/borrar-participante', function (){
     $response = $client->request('DELETE', '/participante/'.$email);
 });
 
+$router->get('/participante/{id}/modificar',[ParticipanteController::class,'edit']);
+
 $router->post('/modificar-participante', function(){
     $uuid_participante = $_POST['uuid'];
     $cliente = new Client();
